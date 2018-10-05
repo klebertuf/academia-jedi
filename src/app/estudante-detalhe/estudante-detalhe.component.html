@@ -1,0 +1,14 @@
+<div *ngIf="estudante">
+	<h2>Detalhes do {{estudante.nome | uppercase}}, é Jedi {{estudante.isJedi}}</h2>
+	<div><span>id: </span> {{estudante.id}}</div>
+	<div>
+		<label>nome:
+			<input [(ngModel)]="estudante.nome" placeholder="nome">
+		</label>
+	</div>
+	<div>
+		<label>jedi: 
+			<input [(ngModel)]="estudante.isJedi" type="checkbox">
+		</label>
+	</div>
+</div>
